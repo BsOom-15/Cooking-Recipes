@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Salsa', cursive;
+    color: #fff;
+    font-size: 25px;
+    background-color: #000;
+}
+
+.head{
+    background-image: url(images/pexels-kampus-production-7964669.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: rgba(0.0, 0.0, 0.0, 0.6);
+    width: 100%;
+    height: 100vh;
+}
+
+.text-logo h2{
+    padding: 20px 80px 0 ;
+    color: #ffdd00;
+}
+
+
+.text-logo ul li{
+    display: inline-block;
+    text-transform: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0;
+    bottom:42px;
+    left: 60%;
+}
+
+#home:after{
+    content: "";
+    width: 71px;
+    height: 2px;
+    background-color: #ffdd00;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+#special:hover:after{
+    content: "";
+    width: 145px;
+    height: 2px;
+    background-color: #ffdd00;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+#about:hover:after{
+    content: "";
+    width: 105px;
+    height: 2px;
+    background-color: #ffdd00;
+    position: absolute;
+    top: 40px;
+    left: 18px;
+}
+
+.paragraph{
+    text-align: center;
+
+}
+
+.paragraph h2{
+    margin: 140px 0 15px;
+}
+
+.paragraph p{
+    margin-bottom: 30px;
+}
+
+.paragraph span{
+    color: #ffdd00;
+}
+
+.paragraph button{
+    background-color: #ffdd00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.paragraph button a{
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Salsa', cursive ;
+}
+
+
+
+.main{
+    margin-top: 100px;
+}
+
+.content-1{
+    display: flex;
+}
+
+.content-1 img{
+    width: 40%;
+    height: 75vh;
+    margin-left: 80px;
+}
+
+.right-side{
+    width: 32%;
+    height: 85vh;
+    background-color: #ffef85;
+    position: absolute;
+    left: 55%;
+}
+
+.right-side h2{
+    padding: 14px 0;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards img{
+    width: 34%;
+    height: 15vh;
+    margin: 40px 20px;
+}
+
+.cards h3 {
+    margin: 50px 20px;
+    font-size: 18px;
+}
+
+.cards h3 a{
+    color: #000;
+    text-decoration: none;
+}
+
+.cards .img{
+    width: 86%;
+} 
+
+.search{
+    position: relative;
+}
+
+.search input{
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-color: #ffef85;
+    padding: 20px 300px;
+    position: absolute;
+    top: 668px;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.search input::placeholder{
+    color: #000;
+    font-family: 'Salsa', cursive;
+    position: relative;
+    right: 220px;
+}
+
+.search svg{
+    position: absolute;
+    top: 155px;
+    left: 27%;
+}
+
+.search button{
+    border: none;
+    outline: none;
+    padding: 20px 44px;
+    border-radius:25px;
+    cursor: pointer;
+    background-color: #ffdd00;
+    font-family: 'Salsa', cursive;
+    position: absolute;
+    top: 696px;
+    right: 353px;
+}
+
+.search button:hover{
+    background-color: #000;
+    color: #ffdd00;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 205px 50px 0;
+}
+
+.recipes{
+    background-color: #ffef85;
+    width: 32%;
+    min-height: 60vh;
+    border-radius: 0 0 10px 10px;
+}
+
+.recipes-cards{
+    color: #000;
+    padding: 2px ;
+}
+
+.recipes-cards img{
+    width: 100%;
+}
+
+.recipes-cards h3{
+    padding: 0 6px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recipes-cards p{
+    padding: 0 10px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.five-svg{
+    margin: 8px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.add button{
+    font-family: 'Salsa', cursive;
+    padding: 10px 12px;
+    text-transform: uppercase;
+    color: #ffdd00;
+    cursor: pointer;
+    outline: none;
+    border: 3px dotted #ffdd00;
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.add button:hover{
+    color: #000;
+    background-color: #ffdd00;
+    transition: 0.2s;
+}
+
+#form{
+    margin-bottom: 100px;
+    display: none;
+}
+
+.add-recipes{
+    text-align: center;
+    background-color: #ffef85;
+    margin: 50px 370px;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.add-recipes input{
+    display: flex;
+    justify-content: center;
+    margin: 10px 7px;
+    width: 90%;
+    padding: 15px 7px;
+    border-radius: 10px;
+    border: none;
+}
+
+.add-recipes .space {
+    height: 150px;
+    padding: 0 12px; 
+}
+
+.add-recipes h4{
+    text-align: start;
+    color: #000;
+    font-family: 'Roboto', sans-serif ;
+    font-size: 16px;
+}
+
+.left-right {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    width: 90%;
+}
+
+.left{
+    width: 100%;
+}
+
+.right{
+    width: 100%;
+}
+
+
+
+
+.add-recipes button{
+    padding: 9px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #ffdd00;
+}
+
+.add-recipes button:hover{
+    background-color: #000;
+    color: #ffef85;
+}
+
+#new-recipes{
+    margin: 10px auto;
+    width: 60%;
+    min-height: 20vh;
+    padding: 5px 10px;
+    border: 3px solid #ffdd00;
+    color: #ffdd00;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.text h3{
+    text-transform: capitalize;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text p{
+    padding-top: 5px;
+    padding-right:  100px;
+    color: #ffef85;
+    font-size: 14px;
+}
+
+#new-recipes h4{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+#color{
+    color: #ffef85;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.btn{
+    display: flex;
+    justify-content: end;
+}
+
+.btn button{
+    margin: 4px 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #ffdd00;
+    cursor: pointer;
+    font-family: 'Salsa', cursive 
+}
+
+.btn button:hover {
+    background-color: #000;
+    color: #ffdd00;
+}
